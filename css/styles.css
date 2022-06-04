@@ -1,9 +1,17 @@
-
+@font-face {
+	font-family: 'Regular';
+	src:url(../fonts/Graphik-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'handwrite';
+    src: url(../fonts/High\ Spirited.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
+    font-family: 'Regular';
 }
 body{
     background-color: black;
@@ -19,30 +27,53 @@ header{
     grid-template-columns: 1fr 1fr;
     
 }
+section{
+    height: 100vh;
+}
 nav{
     width: 100%;
     height: 8vh;
     grid-column: span 2;
-    background-color:darkkhaki;
+    background-color:transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2.5em;
+    position: fixed;
 }
-.logo{
+.bar-btn{
     font-size: 2.5em;
-    font-weight: 100;
+    color: aqua;
+    margin-right: 2em;
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'handwrite';
+    color: white;
+}
+.logo a:hover{
+    text-shadow: 0 0 .4em turquoise;
 }
 .menu{
     display: flex;
 }
 .menu li{
     list-style: none;
-    margin: 1em;
+    margin: 2.5em;
 }
 .menu li a{
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 2em;
+    padding: .5em 1em;
     color: white;
     font-weight: bold;
+}
+
+.menu li a:hover{
+    background: white;
+    color: black;
+    border-radius: 1.5em;
 }
