@@ -27,9 +27,8 @@ header{
     grid-template-columns: 1fr 1fr;
 }
 section{
-    height: 100vh;
+    min-height:  100vh;
 }
-
 /* NAVIGATION BAR */
 nav{
     width: 100%;
@@ -43,36 +42,62 @@ nav{
     position: fixed;
 }
 .container{
-    height: 100vh;
+    min-height:  100vh;
     display: grid;
     align-items: center;
-    padding: 0 10vh 0 10vh;
-    justify-content: center;
+    padding: 0 10vw 0 10vw;
 }
 .bar-btn{
     margin-right: 2em;
     cursor: pointer;
+    display: block;
 }
 .logo a{
     text-decoration: none;
     font-size: 5em;
     font-weight: bold;
     font-family: 'handwrite';
-    color: #F32424;
+    color: #0028FF;
 }
 .logo a:hover{
     text-shadow: 0 0 0.2em white;
 }
+#menuHam{
+    display: block;
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    cursor: pointer;
+}
 .menu{
-    display: flex;
+    display: block;
+    position: fixed;
+    top: 7em;
+    left: -100%;
+    -webkit-backdrop-filter: blur(0.3em);
+    backdrop-filter: blur(0.3em);
+    width: 100%;
+    height: 100vh;
+    right: 0;
 }
 .menu li{
+    padding: 2rem;
     list-style: none;
-    margin: 2.5em;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.menu li:last-child{
+    background: none;
+    padding: 1rem;
+}
+#check:checked ~ ul{
+    transition: all .25s;
+    left:0;
 }
 .menu li a{
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2.5em;
     padding: .5em 1em;
     color: white;
     font-weight: bold;
@@ -83,23 +108,21 @@ nav{
     color: black;
     border-radius: 1.5em;
 }
-.bar-btn, #check{
+#check{
     display: none;
 }
 /* PRESENTATION */
-
 .front-page{
     grid-column: span 2;
     grid-template-columns: 1fr 1fr;
 }
-
 #regard p{
     font-size: 9em;
     text-align: right;   
 }
 #regard b{
     font-size: 1em;
-    color: #F32424;
+    color: #0028FF;
 }
 #regard h1{
     font-size: 12em;
@@ -111,44 +134,52 @@ nav{
     font-weight: bold;
     text-align: center;
 }
-
-@media (max-width:768px){
-
-    /* NAVIGATION BAR  */
-    .bar-btn{
-        display: block;
-    }
-    #menuHam{
-        display: block;
-        position: fixed;
-        top: 2em;
-        right: 2em;
-        cursor: pointer;
-    }
-    .menu{
-        display: block;
-        position: fixed;
-        top: 7em;
-        left: -100%;
-        -webkit-backdrop-filter: blur(0.3em);
-        backdrop-filter: blur(0.3em);
-        width: 100%;
-        height: 100vh;
-        right: 0;
-    }
-    .menu li{
-        padding: 2rem;
-        
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    .menu li:last-child{
-        background: none;
-        padding: 1rem;
-    }
-    #check:checked ~ ul{
-        transition: all .25s;
-        left:0;
-    }
+/* ABOUT */
+#about h2{
+    font-size: 3.5em;
+    text-align: center;
 }
+
+#about p{
+    font-size: 2.3em;
+    text-align: justify;    
+}
+
+.cont-about{
+    margin: 0 10vw 0 10vw;
+}
+/* EXPERIENCE */
+#experience{
+    padding-top: 20vh;
+}
+.cont-left{
+    justify-self: start;
+    text-align: left;
+}
+.cont-rigth{
+    justify-self: end;
+    text-align: right;
+}
+#experience label{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 1em 2em;
+    border: solid;
+    border-radius: 1em;
+    width: 35vw;
+    height: auto;  
+}
+#experience h2{
+    font-size: 4em;
+}
+#experience h3{
+    font-size: 3em;
+}
+#experience h4{
+    font-size: 2em;
+}
+#title{
+    text-align: center;
+}
+
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Portfolio</title>
 </head>
@@ -38,12 +39,84 @@
     </header>
     
     <section id="about">
-        <div class="container text-white">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam eaque possimus minima tempore et mollitia quae provident sequi nulla.</p>
-
+        <div class="container cont-about text-white">
+            <h2>Sobre Mi</h2>
+            <p> Estudie Ingeniería Aeronáutica en Venezuela, durante mis estudios tuve participación en grupos multidisciplinarios para competencias de diseño de aeronaves radiocontroladas (SAE Brasil Aerodesign), esto me permitió desarrollar habilidades de trabajo en equipo, cooperación y de organización, durante esto tuve principal inclinación por los diseños estructurales, me gradué con honor al mérito en Diciembre de 2015 en la Universidad Nacional Experimental Politécnica de la Fuerza Armada Nacional. </p>
+            <p> Inmediatamente después de esto empecé a trabajar en el rubro del mantenimiento aeronáutico, rápidamente me involucré con varias de las áreas que conforman el mantenimiento, como: planificación de mantenimiento, ingeniería, inspecciones y auditorias, desempeñando múltiples cargos y funciones, desde el área de producción hasta incluso dirigir equipos de trabajo. Siempre he valorado el aporte de soluciones simples pero eficientes, optimización de procesos, mejora continua y la orientación al logro de objetivos.</p>
+            <p> Me considero una persona con alta capacidad de adaptación, me gusta asumir retos nuevos y permanecer en constante crecimiento y capacitación, es por ello que hoy día, no solo sigo creciendo en el mantenimiento aeronáutico, sino que trato de capacitarme áreas de tecnología que bien puede resultar una nueva oportunidad laboral o incluso aplicar las nuevas tecnologías a la optimización de nuestros rubros particulares.</p>
         </div>
     </section>
-    <section id="experience"></section>
+    <section id="experience">
+        <div class="container text-white">
+            <h2 id="title">Experiencia</h2>
+            <input type="checkbox" id="btn-modal">
+            <label for="btn-modal" class="lbl-modal cont-left"  data-aos="fade-right">
+                <h3>CG Turbines</h3>
+                <h4>Ago 2019-Actualidad</h4>
+            </label>
+            <div class="containerItem" id="exp1">
+                <header>¡Bienvenidos!</header>
+			    <label for="btn-modal">X</label>
+			    <div class="contenido">
+				<h3><!-- Agregar un titulo --></h3>
+				<p><!-- Agregar un mensaje --></p>
+			</div>
+            </div>
+            <input type="checkbox" id="btn-modal">
+            <label for="btn-modal" class="lbl-modal cont-rigth" data-aos="fade-left">
+                <h3>Avianca</h3>
+                <h4>Sept 2018- Dic 2018</h4>
+            </label>
+            <div class="containerItem" id="exp2">
+                <header>¡Bienvenidos!</header>
+			    <label for="btn-modal">X</label>
+			    <div class="contenido">
+				<h3><!-- Agregar un titulo --></h3>
+				<p><!-- Agregar un mensaje --></p>
+			</div>
+            </div>
+            <input type="checkbox" id="btn-modal">
+            <label for="btn-modal" class="lbl-modal cont-left" data-aos="fade-right">
+                <h3>LASER Airlines</h3>
+                <h4>Ene 2018- Ago 2018</h4>
+            </label>
+            <div class="containerItem" id="exp3" >
+                <header>¡Bienvenidos!</header>
+			    <label for="btn-modal">X</label>
+			    <div class="contenido">
+				<h3><!-- Agregar un titulo --></h3>
+				<p><!-- Agregar un mensaje --></p>
+			</div>
+            </div>
+            <input type="checkbox" id="btn-modal">
+            <label for="btn-modal" class="lbl-modal cont-rigth" data-aos="fade-left">
+                <h3>RUTACA Airlines</h3>
+                <h4>May 2016- Dic 2017</h4>
+            </label>
+            <div class="containerItem" id="exp4">
+                <header>¡Bienvenidos!</header>
+			    <label for="btn-modal">X</label>
+			    <div class="contenido">
+				<h3><!-- Agregar un titulo --></h3>
+				<p><!-- Agregar un mensaje --></p>
+			</div>
+            </div>
+            <input type="checkbox" id="btn-modal">
+            <label for="btn-modal" class="lbl-modal cont-left" data-aos="fade-right">
+                <h3>Aerosupport & Asociados</h3>
+                <h4>Jun 2015- Dic 2015</h4>
+            </label>
+            <div class="containerItem" id="exp5" >
+                <header>¡Bienvenidos!</header>
+			    <label for="btn-modal">X</label>
+			    <div class="contenido">
+				<h3><!-- Agregar un titulo --></h3>
+				<p><!-- Agregar un mensaje --></p>
+			</div>
+            </div>
+        </div>
+    </section>
+   
     <section id="studies">
         <div class="container">
             <div class="containerItem" id="displayPro"></div>
@@ -64,5 +137,11 @@
     </section>
     <section id="contact"></section>
     <script src="https://kit.fontawesome.com/d4e4c1db62.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+		});
+	</script>
 </body>
 </html>
