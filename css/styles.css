@@ -25,11 +25,12 @@ header{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
 }
 section{
     height: 100vh;
 }
+
+/* NAVIGATION BAR */
 nav{
     width: 100%;
     height: 8vh;
@@ -41,6 +42,13 @@ nav{
     padding: 2.5em;
     position: fixed;
 }
+.container{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    padding: 0 10vh 0 10vh;
+    justify-content: center;
+}
 .bar-btn{
     margin-right: 2em;
     cursor: pointer;
@@ -50,10 +58,10 @@ nav{
     font-size: 5em;
     font-weight: bold;
     font-family: 'handwrite';
-    color: white;
+    color: #F32424;
 }
 .logo a:hover{
-    text-shadow: 0 0 .4em turquoise;
+    text-shadow: 0 0 0.2em white;
 }
 .menu{
     display: flex;
@@ -71,14 +79,42 @@ nav{
 }
 .menu li a:hover{
     background: white;
+    font-weight: bold;
     color: black;
     border-radius: 1.5em;
 }
 .bar-btn, #check{
     display: none;
 }
+/* PRESENTATION */
+
+.front-page{
+    grid-column: span 2;
+    grid-template-columns: 1fr 1fr;
+}
+
+#regard p{
+    font-size: 9em;
+    text-align: right;   
+}
+#regard b{
+    font-size: 1em;
+    color: #F32424;
+}
+#regard h1{
+    font-size: 12em;
+    font-weight: bold;
+    text-align: left;
+}
+#regard h2{
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
 
 @media (max-width:768px){
+
+    /* NAVIGATION BAR  */
     .bar-btn{
         display: block;
     }
