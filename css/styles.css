@@ -160,7 +160,7 @@ nav{
     justify-self: end;
     text-align: right;
 }
-#experience label{
+.box{
     margin-left: 10vw;
     margin-right: 10vw;
     padding: 1em 2em;
@@ -181,5 +181,9 @@ nav{
 #title{
     text-align: center;
 }
+#btn-modal, .modal{
+    display: none;
+}
+
 
 
