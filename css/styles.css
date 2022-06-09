@@ -166,8 +166,6 @@ nav{
     margin-left: 5vw;
     margin-right: 5vw;
     padding: 1em 2em;
-    border: solid;
-    border-radius: 1em;
     width: 35vw;
     height: auto;  
 }
@@ -196,16 +194,19 @@ nav{
 .proitem{
     grid-column: span 2;
     justify-self: center;
+    text-align: center;
 }
 .courseitem{
     justify-self: center;
+    text-align: center;
+    width: 15vw;
 }
 .container-studies #title{
     grid-column: span 4;
 }
 .courseitem img{
     height: 5em;
-   
 }
 
+/* CONTACT */
 
