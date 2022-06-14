@@ -19,7 +19,6 @@ body{
     background-position: center center;
     background-size: cover; 
 }
-
 .text-white{
     color: white;
 }
@@ -30,7 +29,6 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 #about, #experience, #studies{
     min-height:  100vh;
 }
@@ -202,7 +200,6 @@ nav{
 #title{
     text-align: center;
 }
-
 /* STUDIES */
 #studies{
     background-image: url(../img/PARED2.jpg);
@@ -256,7 +253,6 @@ nav{
     border-color:#00b4ff;;
     box-shadow: 1px 1px 30px -5px #00b4ff;
 }
-
 .card__front,
 .card__back{
     width: 100%;
@@ -283,8 +279,6 @@ nav{
     transform: translateZ(9rem);
     backface-visibility: hidden;
 }
-
-
 /* .container-studies{
     min-height:  100vh;
     display: grid;
