@@ -94,6 +94,7 @@ border-color: white;
 }
 .container{
     min-height:  100vh;
+    width: 100vw;
     display: grid;
     align-items: center;
     padding: 0 10vw 0 10vw;
@@ -102,9 +103,7 @@ border-color: white;
     display: none;
 }
 /* PRESENTATION */
-/* .front-page{
-    grid-column: span 2;
-} */
+
 #regard p{
 	font-family:'Semibold';
     font-size: 9em;
@@ -280,18 +279,43 @@ border-color: white;
 }
 
 @media (max-width: 480px){
+   *{
+    max-width: 390px;
+    margin: 0;
+   }
     body{
-        background-image: url(../img/hcmov.png);
-        background-attachment: fixed;
-        background-position: center center;
-        background-size: cover; 
+        background-image: url(../img/HC.jpg);
+
+        background-position: center; 
+        background-repeat: no-repeat;
+        width: 100%;
+
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+
     }
     header{
-        width: 480px;
+        width: 100%;
+        height: 100vh;
     }
 
     #about{
-        width: 480px;
+        width: 100%;
+        min-height: 120vh;
+    }
+    #about h2{
+        font-family:'Semibold';
+        font-size: 3em;
+        text-align: center; 
+    }
+    #about p{
+        font-size: 1.3em;
+        text-align: justify;    
+    }
+    .cont-about{
+        padding: 2em 5em;
     }
     #regard p{
         font-family:'Semibold';
