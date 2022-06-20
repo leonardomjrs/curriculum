@@ -102,10 +102,9 @@ border-color: white;
     display: none;
 }
 /* PRESENTATION */
-.front-page{
+/* .front-page{
     grid-column: span 2;
-    grid-template-columns: 1fr 1fr;
-}
+} */
 #regard p{
 	font-family:'Semibold';
     font-size: 9em;
@@ -282,6 +281,36 @@ border-color: white;
 
 @media (max-width: 480px){
     body{
-        width: 360px;
+        background-image: url(../img/hcmov.png);
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover; 
     }
+    header{
+        width: 480px;
+    }
+
+    #about{
+        width: 480px;
+    }
+    #regard p{
+        font-family:'Semibold';
+        font-size: 4.5em;
+        text-align: left;   
+    }
+    #regard b{
+        font-size: 1em;
+        color: #008CE8;
+    }
+    #regard h1{
+        font-family:'Semibold';
+        font-size: 6em;
+        text-align: left;
+    }
+    #regard h2{
+        font-family:'Semibold';
+        font-size: 2em;
+        text-align: center;
+    }
+   
 }
