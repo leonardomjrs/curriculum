@@ -267,6 +267,7 @@ border-color: white;
 .card__back{
     transform: rotateY(180deg);
 }
+p, div.bloque{}
 .body__card_front, .body__card_back{
     max-width: 100%;
     height: 100%;
